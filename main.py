@@ -4,7 +4,7 @@ CURRENT_VERSION = """
 2.6.10
 """
 CURRENT_VERSION=CURRENT_VERSION.replace('\n','')
-server_local = "http://127.0.0.1:3000"
+server_local = "https://0.0.0.0:8080"
 server_online = "https://73dffff2-73d0-42d9-905e-fc741e64ac4d-00-2wwr5mungughx.sisko.replit.dev/"
 mode_server = server_online
 """
