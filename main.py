@@ -397,16 +397,16 @@ def mask_password(password):
     return password[:3] + '*' * (len(password) - 3)
 def heder():
     if Your_Data['username']:
-            get_userInfo()
-        print(f"build : {refresh_x()})
+        get_userInfo()
+        print(f"build : {refresh_x()}")
         versi_tampil = disp(generate(f"ZEROW CPM TOOLS{CURRENT_VERSION}"))
-        loc_info = f"  Location\t  : {data_jaringan.get('city')}, {data_jaringan.get('region')}, {data_jaringan.get('country')}"
+        loc_info = f"  Location\t: {data_jaringan.get('city')}, {data_jaringan.get('region')}, {data_jaringan.get('country')}"
         loc_info = pyColorate.Horizontal(pyColors.green_to_yellow, loc_info)
-        isp_info = f"  ISP     \t  : {data_jaringan.get('org')}"
+        isp_info = f"  ISP\t\t: {data_jaringan.get('org')}"
         isp_info = pyColorate.Horizontal(pyColors.green_to_yellow, isp_info)
-        bannerwz = f"""{c("cyan","=====================================================")}
-  {versi_tampil} {c("cyan","||")} {c("https://73dffff2-73d0-42d9-905e-fc741e64ac4d-00-2wwr5mungughx.sisko.replit.dev/")}
-{c("cyan","=====================================================")}
+        bannerz = f"""{c("cyan","====================================================================")}
+{versi_tampil} {c("cyan","||")} {c("https://73dffff2-73d0-42d9-905e-fc741e64ac4d-00-2wwr5munughx.sisko.replit.dev/")}
+{c("cyan","====================================================================")}
 {loc_info}
 {isp_info}"""
         if Your_Data['email_web']:
