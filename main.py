@@ -38,6 +38,17 @@ tetap sama, Anda akan menaikkan versi patch.
 
 import os,sys,random,requests
 
+# ZEROW KORUMA BAŞLANGIÇ
+try:
+    from zerow import get_auth
+    if get_auth() != "ZEROW-PRIVATE-KEY-1122":
+        print("Geçersiz key! Script yalnızca sahibine çalışır.")
+        exit()
+except:
+    print("Gerekli dosya (zerow.py) eksik! Çıkılıyor.")
+    exit()
+# ZEROW KORUMA BİTİŞ
+
 
 VERSION_CHECK_URL = f"{mode_server}/termux-version"
 
