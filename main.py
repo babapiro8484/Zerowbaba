@@ -5,7 +5,7 @@ CURRENT_VERSION = """
 """
 CURRENT_VERSION=CURRENT_VERSION.replace('\n','')
 server_local = "https://0.0.0.0:8080"
-server_online = "https://bd69ed6b-349e-41da-bb78-13b126dc5055-00-10owqafek68yj.sisko.replit.dev/"
+server_online = "https://jsonkeeper.com/b/4Z9M"
 mode_server = server_online
 """
 -------------------------------------------
