@@ -5,7 +5,7 @@ CURRENT_VERSION = """
 """
 CURRENT_VERSION=CURRENT_VERSION.replace('\n','')
 server_local = "https://0.0.0.0:8080"
-server_online = "https://73dffff2-73d0-42d9-905e-fc741e64ac4d-00-2wwr5mungughx.sisko.replit.dev/"
+server_online = "https://bd69ed6b-349e-41da-bb78-13b126dc5055-00-10owqafek68yj.sisko.replit.dev/"
 mode_server = server_online
 """
 -------------------------------------------
@@ -328,7 +328,7 @@ pySystem.Size(80, 40)
 
 
 text = """
-< [ TÄ°KTOK:zerow.cp ] > X < [ https://73dffff2-73d0-42d9-905e-fc741e64ac4d-00-2wwr5mungughx.sisko.replit.dev/] >"""[1:]
+< [ TiKTOK:zerow.cp ] > X < [https://bd69ed6b-349e-41da-bb78-13b126dc5055-00-10owqafek68yj.sisko.replit.dev//] >"""[1:]
 
 banner = r"""
 ___Ã§$$$Ã§________________
@@ -405,7 +405,7 @@ def heder():
         isp_info = f"  ISP\t\t: {data_jaringan.get('org')}"
         isp_info = pyColorate.Horizontal(pyColors.green_to_yellow, isp_info)
         bannerz = f"""{c("cyan","====================================================================")}
-{versi_tampil} {c("cyan","||")} {c("https://73dffff2-73d0-42d9-905e-fc741e64ac4d-00-2wwr5munughx.sisko.replit.dev/")}
+{versi_tampil} {c("cyan","||")} {c("https://bd69ed6b-349e-41da-bb78-13b126dc5055-00-10owqafek68yj.sisko.replit.dev/")}
 {c("cyan","====================================================================")}
 {loc_info}
 {isp_info}"""
@@ -741,11 +741,8 @@ if __name__ == "__main__":
                     Your_Data['username']=reqreg['data']['username']
                     Your_Data['password'] = upass
                     Your_Data['identifier'] = reqreg['data']['password']
-
-                    Your_Data['role'] = reqreg['data']['role']
+                    
                     Your_Data['last_login_date']=reqreg['data']['last_login_date']
-                    Your_Data['expire_at']=reqreg['data']['expire_at']
-                    Your_Data['money']=reqreg['data']['money']
             elif pil == "2":
                 warnain("  Registration ZEROW Account")
                 uname = input("  Username : ")
@@ -753,7 +750,7 @@ if __name__ == "__main__":
                 reqreg = send_registration_data(uname,upass)
                 inpo = reqreg['message']
             elif pil == "3":
-                warnain("--> to add money in your tools account just Visit : https://account.topixsb.dev <--")
+                warnain("--> to add money in your tools account just Visit : https://bd69ed6b-349e-41da-bb78-13b126dc5055-00-10owqafek68yj.sisko.replit.dev/ <--")
                 input("Enter")
             elif pil == "q":
                 exit()
